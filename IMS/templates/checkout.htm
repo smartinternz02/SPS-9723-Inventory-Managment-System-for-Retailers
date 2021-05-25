@@ -1,0 +1,145 @@
+
+<!-- saved from url=(0030)http://localhost:8080/checkout -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link href="./checkout_files/css2" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link href="./checkout_files/css2(1)" rel="stylesheet">
+<link rel="stylesheet" href="./checkout_files/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<link rel="stylesheet" href="./checkout_files/style.css">
+<link rel="shortcut icon" href="http://localhost:8080/checkout#">
+
+</head>
+
+<body>
+
+<div class="top">
+    <p>INVENTORY MANAGEMENT SYSTEM</p>
+</div>
+
+<div class="nav">
+    <a href="http://localhost:8080/">Suppliers</a>
+    <a href="http://localhost:8080/inventory">Inventory</a>
+    <a href="http://localhost:8080/checkout" style="color: #ffe89d;">Checkout</a>
+    <a href="http://localhost:8080/transactions">Transactions</a>
+    <a href="http://localhost:8080/logout" style="float: right;">Logout</a>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            
+            <center>
+            <h1 style="font-size: 30px;">CART</h1>
+            
+            <div class="msg">
+            No items in the cart.
+            </div>
+            <br>
+    
+            <table style="width: 100%;">
+                <tbody><tr>
+                    <th>Customer name</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Delete</th>
+                </tr>
+                </tbody><tbody>
+                    
+                </tbody>
+            </table>
+            </center>
+            
+            <br>
+            <div class="row">
+                <div class="leftcolumn">
+                    <p>No. of items in the cart: 0</p>
+                    <p>Total cost: <span>₹</span></p>
+                    
+                    <form method="post" action="http://localhost:8080/tender/">
+                        <label>Amount Paid:</label>
+                        <input type="text" name="tender" style="width: 40%; margin-bottom: 5px;" value="0" required="">
+                        <button type="submit" style="background-color: white; border: none; cursor: pointer;">
+                        <i class="fas fa-sync" style="font-size: 30px; color: green;"></i>
+                        </button>
+                        <br>
+                        <label>Change:</label>
+                        <input type="text" name="change" value="0" style="width:40%;" readonly="">
+                    </form>
+                </div>
+                
+                <div class="rightcolumn">
+                    <form method="post" action="http://localhost:8080/cart_checkout" style="margin-top: 18px;">
+                        <button type="submit" class="checkoutbtn">Buy</button>
+                    </form>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+    
+    <div class="rightcolumn">
+        <div class="card">
+            
+            <center>
+            <h1 style="font-size: 30px;">PRODUCTS</h1>
+            
+            <div class="msg">
+            
+            </div>
+            <br>
+    
+            <table style="width: 100%;">
+                <tbody><tr>
+                    <th>Product name</th>
+                    <th>Quantity available</th>
+                    <th>Price per item</th>
+                    <th>Supplier</th>
+                    <th>Add to cart</th>
+                </tr>
+                </tbody><tbody>
+                        
+                    <tr>
+                        <td>IPHONE 12</td>
+                        <td>0</td>
+                        <td><span>₹</span>105000</td>
+                        <td>IPHONE</td>
+                        
+                        <td>
+                        <center>
+                        <a href="http://localhost:8080/add_to_cart/10">
+                        <i class="fas fa-plus-square" style="font-size: 26px; color: #50fc00;"></i>
+                        </a>
+                        </center>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </center>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+<p style="text-align: center;">
+    </p><p style="float: left; padding-left: 50px;">---IMS---</p>
+	<p style="float: right; padding-right: 50px;">
+	© 
+    <script>
+        document.write(new Date().getFullYear());
+	</script>2021
+	| All rights reserved
+</p>
+<br><br>
+</div>
+
+
+
+</body></html>
